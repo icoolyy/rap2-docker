@@ -50,8 +50,8 @@ services:
     container_name: rap2-mysql
     image: mysql:5.7.22
     # expose 33306 to client (navicat)
-    #ports:
-    #   - 33306:3306
+    ports:
+       - 33306:3306
     volumes:
       # change './docker/mysql/volume' to your own path
       # WARNING: without this line, your data will be lost.
